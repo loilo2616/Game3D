@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: 86cb432819d0e114e87e6702f35b7b84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3223683694851847109
+    second: jewelpuzzle0_0
+  - first:
+      213: 9141514467369485214
+    second: jewelpuzzle0_1
+  - first:
+      213: -5293224414141387757
+    second: jewelpuzzle0_2
+  - first:
+      213: -7699989005424542872
+    second: jewelpuzzle0_3
+  - first:
+      213: 4936175596006568582
+    second: jewelpuzzle0_4
+  - first:
+      213: 8103679182750071392
+    second: jewelpuzzle0_5
+  - first:
+      213: 8167866444617111274
+    second: jewelpuzzle0_6
+  - first:
+      213: -4156006684218067334
+    second: jewelpuzzle0_7
+  - first:
+      213: 2176186736266416512
+    second: jewelpuzzle0_8
+  - first:
+      213: 8395368449911662044
+    second: jewelpuzzle0_9
+  - first:
+      213: -6483377270511710766
+    second: jewelpuzzle0_10
+  - first:
+      213: -4875226478492428303
+    second: jewelpuzzle0_11
+  - first:
+      213: -8655803801547372815
+    second: jewelpuzzle0_12
+  - first:
+      213: -8419530673896119252
+    second: jewelpuzzle0_13
+  - first:
+      213: 9166638757328949502
+    second: jewelpuzzle0_14
+  - first:
+      213: -7270179388984194905
+    second: jewelpuzzle0_15
+  - first:
+      213: 2436384360488468381
+    second: jewelpuzzle0_16
+  - first:
+      213: 6801633682686429001
+    second: jewelpuzzle0_17
+  - first:
+      213: 7247501519816848627
+    second: jewelpuzzle0_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jewelpuzzle0_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 918
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3fcdb9d33dcbc20800000000000000
+      internalID: 3223683694851847109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 893
+        width: 369
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9307a869fe2dde70800000000000000
+      internalID: 9141514467369485214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 893
+        width: 369
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c6da6a070ba86b0800000000000000
+      internalID: -5293224414141387757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 782
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bb14dbbc4242590800000000000000
+      internalID: -7699989005424542872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 757
+        width: 369
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6827ce43d81d08440800000000000000
+      internalID: 4936175596006568582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 267
+        width: 514
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06abb85184d067070800000000000000
+      internalID: 8103679182750071392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 732
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae65c3491471a5170800000000000000
+      internalID: 8167866444617111274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_7
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 646
+        width: 119
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76780fa0f5e256c0800000000000000
+      internalID: -4156006684218067334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_8
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 688
+        width: 336
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08193148e4e533e10800000000000000
+      internalID: 2176186736266416512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_9
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 689
+        width: 157
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5a187ef17528470800000000000000
+      internalID: 8395368449911662044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 157
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddce4e09ba6606a0800000000000000
+      internalID: -6483377270511710766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 174
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f751ed0957b75cb0800000000000000
+      internalID: -4875226478492428303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 157
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f60b4b8d4860e780800000000000000
+      internalID: -8655803801547372815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_13
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 174
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24aaeee571d72b80800000000000000
+      internalID: -8419530673896119252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_14
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 157
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef09be20261763f70800000000000000
+      internalID: 9166638757328949502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 177
+        width: 141
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a80b326d522b1b90800000000000000
+      internalID: -7270179388984194905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_16
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 157
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f7b37daa6cfc120800000000000000
+      internalID: 2436384360488468381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_17
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 215
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9474bdc3cc1446e50800000000000000
+      internalID: 6801633682686429001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jewelpuzzle0_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 45
+        width: 132
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f479cdbb3c449460800000000000000
+      internalID: 7247501519816848627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
