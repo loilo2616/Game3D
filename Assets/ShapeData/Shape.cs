@@ -1,19 +1,30 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using Unity.Collections;
 
 public class Shape : MonoBehaviour
 {
+    //Block
     public GameObject SquareShaoeImage;
 
+    //sinh Shapeblock
     [HideInInspector]
     public ShapeData CurrentShapeData;
 
+    //Mảng GameObject
     private List<GameObject> _CurrentShape = new List<GameObject>();
+
     void Start()
     {
-        
+        RequestNewShape(CurrentShapeData);
     }
+    public void RequestNewShape(ShapeData shapeData)
+    {
+        CreateShape(shapeData);
+    }
+    //
     public void CreateShape(ShapeData shapeData)
     {
         CurrentShapeData = shapeData;
@@ -29,9 +40,9 @@ public class Shape : MonoBehaviour
             Square.gameObject.transform.position = Vector3.zero;
             Square.gameObject.SetActive(false);
         }
-
-        var squareRect = SquareShaoeImage.GetComponent<RectTransform>();
-        var moveDistance = new Vector2(squareRect.rect.width * squareRect.localScale.x, squareRect.rect.height * squareRect.rect.y);
+        //khoảng cách Block
+        var squareRect = SquareShaoeImage.GetComponent<Transform>();
+        var moveDistance = new Vector2(squareRect.localScale.x * squareRect.localScale.x * 1.14f, squareRect.localScale.y * squareRect.localScale.x * 1.14f);
 
         int CurrentINdexInlist = 0;
 
@@ -42,100 +53,48 @@ public class Shape : MonoBehaviour
                 if(shapeData.board[row].column[column])
                 {
                     _CurrentShape[CurrentINdexInlist].SetActive(true);
-                    _CurrentShape[CurrentINdexInlist].GetComponent<RectTransform>().localPosition = new Vector2(GetpositionXForShapeSquare(shapeData, column, moveDistance), GetpositionYForShapeSquare(shapeData, row, moveDistance);
-                    CurrentINdexInlist++;
+                    _CurrentShape[CurrentINdexInlist].GetComponent<Transform>().localPosition = new Vector2(GetXPositionForShapeSquare(shapeData, column, moveDistance), 
+                    GetYPositionForShapeSquare(shapeData, row, moveDistance));
+                   CurrentINdexInlist++;
                 }
             }
         }
     }
-    public float GetpositionYForShapeSquare(ShapeData shapeData, int row, Vector2 moveDistance)
-    {
-        float shiftOny = 0f;
-       if(shapeData.rows > 1)
-        {
-            if (shapeData.rows % 2 != 0)
-            {
-                var middleSquareindex = (shapeData.rows - 1) / 2;
-                var multiplier = (shapeData.rows - 1) / 2;
-                if (row < middleSquareindex)
-                {
-                    shiftOny = moveDistance.y * 1;
-                    shiftOny *= multiplier;
-                }
-                else if (row > middleSquareindex)
-                {
-                    shiftOny = moveDistance.y * 1;
-                    shiftOny *= multiplier;
-                }
-                else
-                {
-                    var middleSquareIndex2 = (shapeData.rows == 2) ? 1 : (shapeData.rows / 2);
-                    var middleSquareIndex1 = (shapeData.rows == 2) ? 0 : shapeData.rows - 2;
-                    var amultiplier = shapeData.rows / 2;
 
-                    if (row == middleSquareIndex1 || row == middleSquareIndex2)
-                    {
-                        if(row == middleSquareIndex2)
-                        {
-                            shiftOny = (moveDistance.y / 2) * -1;
-                        }
-                        if (row == middleSquareIndex1)
-                        {
-                            shiftOny = (moveDistance.y / 2);
-                        }
-                    }
-                    if (row < middleSquareIndex1 && row < middleSquareIndex2)
-                    {
-                        shiftOny = moveDistance.y * 1;
-                        shiftOny = multiplier;
-                    }
-                    else if (row > middleSquareIndex1 && row > middleSquareIndex2)
-                    {
-                        shiftOny = moveDistance.y * 1;
-                        shiftOny = multiplier;
-                    }
-                }
-            }
-        }
-        return shiftOny;
-    }
-    public float GetpositionXForShapeSquare(ShapeData shapeData, int column, Vector2 moveDistance)
+    //Tạo mảng đa chiều + Ô vuông,check tòa độ x,y 
+    #region
+    //Gán vị trí điểm X trên tòa độ(x,y)
+    private float GetXPositionForShapeSquare(ShapeData shapeData, int column, Vector2 moveDistance)
     {
-        float shiftonx = 0f;
-        if(shapeData.columns % 2 != 0)
+        float shiftOnX = 0f;
+        if (shapeData.columns > 1)
         {
-            var middleSquareindex = (shapeData.columns - 1) / 2;
-            var multiplier = (shapeData.columns - 1) / 2;
-            if(column < middleSquareindex)
-            {
-                shiftonx = moveDistance.x * 1;
-                shiftonx *= multiplier;
-            }
-            else if(column > middleSquareindex)
-            {
-                shiftonx = moveDistance.x * 1;
-                shiftonx *= multiplier;
-            }
+            float startXPos;
+            if (shapeData.columns % 2 != 0)
+                startXPos = (shapeData.columns / 2) * moveDistance.x * -1;
             else
-            {
-                var middleSquareIndex2 = (shapeData.columns == 2) ? 1 : (shapeData.columns / 2);
-                var middleSquareIndex1 = (shapeData.columns == 2) ? 0 : shapeData.columns -1;
-                var amultiplier = shapeData.columns / 2;
+                startXPos = ((shapeData.columns / 2) - 1) * moveDistance.x * -1 - moveDistance.x / 2;
+            shiftOnX = startXPos + column * moveDistance.x;
 
-                if(column == middleSquareIndex1 || column == middleSquareIndex2)
-                {
-                    shiftonx = moveDistance.x * 1;
-                    shiftonx *= multiplier;
-                }
-                else if(column > middleSquareIndex1 && column > middleSquareIndex2)
-                {
-                    shiftonx = moveDistance.x * 1;
-                    shiftonx = multiplier;
-                }
-            }
         }
-        return shiftonx;
+        return shiftOnX;
     }
+    //Gán vị trí điểm y trên tòa độ(x,y)
+    private float GetYPositionForShapeSquare(ShapeData shapeData, int row, Vector2 moveDistance)
+    {
+        float shiftOnY = 0f;
+        if (shapeData.rows > 1)
+        {
+            float startYPos;
+            if (shapeData.rows % 2 != 0)
+                startYPos = (shapeData.rows / 2) * moveDistance.y;
+            else
+                startYPos = ((shapeData.rows / 2) - 1) * moveDistance.y + moveDistance.y / 2;
+            shiftOnY = startYPos - row * moveDistance.y;
+        }
+        return shiftOnY;
+    }
+    //Tạo ô vuông = Board trên tòa độ(x,y)
     private int GetNumberOfSquares(ShapeData shapeData)
     {
         int number = 0;
@@ -147,4 +106,13 @@ public class Shape : MonoBehaviour
         }
         return number;
     }
+    #endregion
+   //// void ClickMouseSprite()
+   //// {
+   ////     RaycastHit2D Hit = Physics2D.Raycast(transform.position, My_Transform.position, layerMask);
+   //// }    
+   ////public  void OnSprite()
+   ////{
+
+   ////}    
 }
